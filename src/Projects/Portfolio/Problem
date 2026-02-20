@@ -1,0 +1,39 @@
+This program will do the following.
+
+1.First it will let a person create an Account and then ask them to create a password.
+2.After they create an account,they will be asked to login.
+3.If login is successful,it will ask them to enter their name,email id,etc.
+4.If login is unsuccessful,it will ask them to try again.
+
+
+Classes :
+1.Details.
+    Variables:-
+    name;
+    email;
+    address;
+    school;
+    TechSkills[];
+
+    Methods:-
+    getName();
+    setName();
+    getEmail();
+    setEmail();
+    getAddy();
+    setAddy();
+    getSchool();
+    setSchool();
+    getTechSkills();
+    setTechSkills();
+
+2.User (extends details) :
+    Variables:-
+    uid;
+    pass;
+
+    Methods:-
+    getUid();
+    setUid();
+    getPass();
+    setPass();

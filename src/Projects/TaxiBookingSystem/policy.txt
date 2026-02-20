@@ -1,0 +1,2 @@
+If ride is not boarded within waiting time set by you,then the ride is cancelled.
+More features will be added in the future.
