@@ -99,7 +99,7 @@ public class Main {
         System.out.println("Enter your skills : ");
         String[] TechSkills = new String[no];
         for(int i = 0;i < no;i++){
-            TechSkills[i] = in.nextLine();
+            TechSkills[i] = in.next();
         }
         return TechSkills;
     }
