@@ -1,0 +1,7 @@
+/////////////////////////////Hotel Booking System////////////////////////////////
+
+Classes :-
+
+1.Rooms :- size,features,no of people that can be accommodated{suggestions},views.[Extending Menu class]
+2.Customer{does the payment and transactions stuff}
+3.Menu{shows the home page to the customers}
