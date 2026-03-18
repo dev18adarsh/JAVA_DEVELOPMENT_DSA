@@ -52,6 +52,59 @@ public class Main {
                         ChangePassword cp1 = new ChangePassword();
                         System.out.println("Enter your username : ");
                         String un_input = in.nextLine();
+                        cp1.setUsername(un_input);
+
+                        System.out.println();
+                        System.out.println();
+
+                        System.out.println("OTP : " + cp1.GenerateOtp());
+
+                        System.out.println();
+                        System.out.println();
+
+                        System.out.println("Enter OTP : ");
+                        int otp = in.nextInt();
+
+                        if(otp == cp1.getOtp()){
+                            System.out.println("Create new password : ");
+                            String new_pas = in.nextLine();
+                            System.out.println("Confirm Password : ");
+                            String cnf_pass = in.nextLine();
+
+                            if(Objects.equals(new_pas, cnf_pass)){
+                                u1.setPsd(cnf_pass);
+                                System.out.println("Login again.");
+                            }
+
+                            System.out.println("Enter username : ");
+                            String user_name = in.nextLine();
+                            System.out.println("Enter password : ");
+                            String pass_word = in.nextLine();
+
+                            if(Objects.equals(user_name, u1.getUser_id()) && Objects.equals(pass_word, u1.getPsd())){
+                                System.out.println("Account logged in successfully.");
+
+                                System.out.println();
+
+                                u1.setName(InputName());
+                                u1.setAge(InputAge());
+                                u1.setEmail(InputEmail());
+                                u1.setAddress(InputAddress());
+                                u1.setSkills(InputSkills());
+
+                                System.out.println();
+                                System.out.println(":::::::::::::::::: User Details ::::::::::::::::::");
+                                //print all details.
+                                u1.PrintName();
+                                u1.PrintEmail();
+                                u1.PrintAge();
+                                u1.PrintAddress();
+                                u1.PrintSkills();
+                            }
+                        }
+                        else {
+                            System.out.println("Credentials don't match.");
+                        }
                     }
             }
         }
