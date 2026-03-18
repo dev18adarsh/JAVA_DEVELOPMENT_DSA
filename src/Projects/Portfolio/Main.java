@@ -42,7 +42,17 @@ public class Main {
                 u1.PrintSkills();
             }
             else{
-
+                //create ChangePassword object.
+                System.out.println("Forgot Password?");
+                    String opt = in.next();
+                    if(Objects.equals(opt, "no")){
+                        System.out.println("Okay.");
+                    }
+                    else{
+                        ChangePassword cp1 = new ChangePassword();
+                        System.out.println("Enter your username : ");
+                        String un_input = in.nextLine();
+                    }
             }
         }
         else if(choice == 'n'){
