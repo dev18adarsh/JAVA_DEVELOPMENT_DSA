@@ -42,7 +42,7 @@ public class Main {
                 u1.PrintSkills();
             }
             else{
-                System.out.println("Credentials didn't match,Try again.");
+
             }
         }
         else if(choice == 'n'){
