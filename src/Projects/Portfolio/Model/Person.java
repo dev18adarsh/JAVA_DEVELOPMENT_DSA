@@ -4,7 +4,7 @@ import java.util.Enumeration;
 
 public class Person {
     private String name;
-    private String id;
+    private String Uid;
     private int age;
     private String address;
 
@@ -38,13 +38,13 @@ public class Person {
         }
     }
 
-    public String getId() {
-        return id;
+    public String getUid() {
+        return Uid;
     }
 
     public void setId(String id) {
         if(id != null && !id.isEmpty()){
-            this.id = id;
+            this.Uid = id;
         }
     }
 }
