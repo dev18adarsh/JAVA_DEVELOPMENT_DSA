@@ -3,6 +3,7 @@ package Projects.Portfolio;
 public class Person extends User{
     public Person(String username, String password) {
         super(username, password);
+        System.out.println("Account created.");
     }
 
     private String name;
