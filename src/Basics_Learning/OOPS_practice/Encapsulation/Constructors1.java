@@ -5,8 +5,6 @@ public class Constructors1 {
 
         myMainEmployee m1 = new myMainEmployee("adarsh",5488);
 //        m1.setId(486);
-//        m1.setName("leclerc");
-
         System.out.println(m1.getId());
         System.out.println(m1.getName());
 
