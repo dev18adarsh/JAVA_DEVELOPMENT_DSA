@@ -3,12 +3,22 @@ package Projects.Portfolio;
 import java.util.Objects;
 
 public class User {
-    private final String username;
+    private String username;
     private String password;
 
     public User(String username,String password){
-        this.username = username;
-        this.password = password;
+        if(username != null && !username.isEmpty()){
+            this.username = username;
+        }
+        else{
+            System.out.println("Enter a valid username");
+        }
+        if(password != null && !password.isEmpty()){
+            this.password = password;
+        }
+        else{
+            System.out.println("Enter a valid password.");
+        }
     }
 
     public String getUsername() {
