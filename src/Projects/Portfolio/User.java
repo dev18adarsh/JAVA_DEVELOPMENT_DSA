@@ -27,10 +27,7 @@ public class User {
     }
 
     public int GenerateOTP(){
-        Random rand = new Random();
-        int min = 1000;
-        int max = 9999;
-        return rand.nextInt(max,min);
+        return (int) (Math.random() * 9000) + 1000;
     }
 
     public void changePassword(int otp,String new_pass){
