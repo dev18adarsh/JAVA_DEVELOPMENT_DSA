@@ -1,0 +1,68 @@
+🟢 Level 1 – Basics (Warm-up)
+Q1:
+
+Create a class BankAccount
+
+private: accountNumber, balance
+getter for balance
+setter to deposit money (only positive)
+Q2:
+
+Create class Student
+
+private: name, marks
+setter for marks (0–100 only)
+getter for both
+🟡 Level 2 – Inheritance Basics
+Q3:
+
+Create:
+
+Person → name, age
+Teacher → subject, salary
+
+Print all details.
+
+Q4:
+
+Create:
+
+Vehicle → speed
+Car → brand
+
+Add method:
+
+void display()
+🟠 Level 3 – Constructor + super
+Q5:
+Person(name)
+Student(name, marks)
+
+Use super() to initialize name.
+
+🔴 Level 4 – Overriding (VERY IMPORTANT)
+Q6:
+
+Create:
+
+Animal → sound()
+Dog → sound()
+Cat → sound()
+
+Call all and observe output.
+
+🔵 Level 5 – Real Thinking
+Q7:
+
+Create a class hierarchy:
+
+Employee
+   |
+   |---- Developer
+   |---- Manager
+
+Each has:
+
+calculateSalary()
+
+Override differently.
