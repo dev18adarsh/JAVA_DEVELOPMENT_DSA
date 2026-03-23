@@ -2,7 +2,7 @@ package Basics_Learning.OOPS_practice.Encapsulation_Inheritance_Practice;
 
 public class Main {
     public static void main(String[] args) {
-        Person p1 = new Person();
+        Person p1 = new Person("Adarsh",23);
         p1.PrintAge();
         p1.PrintName();
 
@@ -18,5 +18,8 @@ public class Main {
 
         System.out.println(c1.getBrand());
         System.out.println(c1.getSpeed());
+        Student s1 = new Student("Adarsh",15,34);
+        System.out.println(s1.getMarks());
+        System.out.println(s1.getName());
     }
 }

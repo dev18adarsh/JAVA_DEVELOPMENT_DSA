@@ -1,8 +1,13 @@
 package Basics_Learning.OOPS_practice.Encapsulation_Inheritance_Practice;
 
-public class Student {
+public class Student extends Person{
     private String name;
     private int marks;
+
+    public Student(String name, int age ,int marks) {
+        super(name, age);
+        this.marks = marks;
+    }
 
     public String getName(){
         return name;
