@@ -8,6 +8,11 @@ public class Person {
         this.name = name;
         this.age = age;
     }
+
+    public Person() {
+        System.out.println("Person created.");
+    }
+
     public void PrintName(){
         System.out.println(name);
     }

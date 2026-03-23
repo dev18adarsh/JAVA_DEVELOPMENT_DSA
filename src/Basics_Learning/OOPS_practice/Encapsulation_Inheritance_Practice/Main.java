@@ -21,5 +21,13 @@ public class Main {
         Student s1 = new Student("Adarsh",15,34);
         System.out.println(s1.getMarks());
         System.out.println(s1.getName());
+
+        Dog d1 = new Dog();
+        Cat cat1 = new Cat();
+        Animal a1 = new Animal();
+
+        a1.Sound();
+        cat1.Sound();
+        d1.Sound();
     }
 }
