@@ -5,5 +5,11 @@ public class Main {
         Person p1 = new Person();
         p1.PrintAge();
         p1.PrintName();
+
+        Teacher t1 = new Teacher();
+        t1.PrintName();
+        t1.PrintAge();
+        t1.PrintSalary();
+        t1.PrintSubject();
     }
 }
