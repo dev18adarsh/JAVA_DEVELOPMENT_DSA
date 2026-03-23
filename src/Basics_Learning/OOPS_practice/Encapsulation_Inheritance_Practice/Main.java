@@ -11,5 +11,12 @@ public class Main {
         t1.PrintAge();
         t1.PrintSalary();
         t1.PrintSubject();
+
+        Car c1 = new Car();
+        c1.setBrand("Ferrari");
+        c1.setSpeed(350);
+
+        System.out.println(c1.getBrand());
+        System.out.println(c1.getSpeed());
     }
 }
