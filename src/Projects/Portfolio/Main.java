@@ -19,9 +19,9 @@ public class Main {
             Person p1 = new Person(username,password);
 
             System.out.println("Enter your username : ");
-            String user = in.nextLine();
+            String user = in.next();
             System.out.println("Enter your password : ");
-            String pass = in.nextLine();
+            String pass = in.next();
 
             if(Objects.equals(user, p1.getUsername()) && Objects.equals(pass,password)){
                 System.out.println("Account logged in successfully.");
@@ -38,29 +38,34 @@ public class Main {
             }
             else {
                 System.out.println("Forgot password : ");
-                char ch = in.nextLine().charAt(0);
+                String ch = in.next();
                 System.out.println("Enter new password : ");
-                String new_pass = in.nextLine();
+                String new_pass = in.next();
 
                 System.out.println("Otp : " + p1.GenerateOTP());
                 System.out.println("Enter OTP : ");
                 int otp = in.nextInt();
 
-                if(ch == 'y'){
-                    p1.changePassword(otp,new_pass);
-                }
-                if(Objects.equals(user, p1.getUsername()) && Objects.equals(pass,password)){
-                    System.out.println("Account logged in successfully.");
-                    p1.setName(InputName());
-                    p1.setAge(InputAge());
-                    p1.setSkills(InputSkills());
-                    p1.setAddress(InputAddress());
+                if(Objects.equals(ch, "y")){
+                    p1.changePassword(otp,p1.GenerateOTP(),new_pass);
+                    System.out.println("Enter your username : ");
+                    String user_name = in.next();
+                    System.out.println("Enter your password : ");
+                    String psd = in.next();
 
-                    System.out.println("#/#/#/#/#/#/#/#/#/#/#/#/ Your Details #/#/#/#/#/#/#/#/#/#/#/#/");
-                    System.out.println("Name : " + p1.getName());
-                    System.out.println("Age : " + p1.getAge());
-                    System.out.println("Address : " + p1.getAddress());
-                    System.out.println("Skills : " + Arrays.toString(p1.getSkills()));
+                    if(Objects.equals(user_name, p1.getUsername()) && Objects.equals(psd,new_pass)){
+                        System.out.println("Account logged in successfully.");
+                        p1.setName(InputName());
+                        p1.setAge(InputAge());
+                        p1.setSkills(InputSkills());
+                        p1.setAddress(InputAddress());
+
+                        System.out.println("#/#/#/#/#/#/#/#/#/#/#/#/ Your Details #/#/#/#/#/#/#/#/#/#/#/#/");
+                        System.out.println("Name : " + p1.getName());
+                        System.out.println("Age : " + p1.getAge());
+                        System.out.println("Address : " + p1.getAddress());
+                        System.out.println("Skills : " + Arrays.toString(p1.getSkills()));
+                    }
                 }
             }
         } else if (Objects.equals(opt,"no")) {
@@ -82,14 +87,14 @@ public class Main {
 
     public static String InputAddress(){
         System.out.println("Enter your address : ");
-        return in.nextLine();
+        return in.next();
     }
 
     public static String[] InputSkills(){
         String[] skills = new String[3];
         System.out.println("Enter only 3 primary skills of yours : ");
         for(int i = 0;i < skills.length;i++){
-            skills[i] = in.nextLine();
+            skills[i] = in.next();
         }
         return skills;
     }
