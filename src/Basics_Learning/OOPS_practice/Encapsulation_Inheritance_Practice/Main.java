@@ -7,7 +7,7 @@ public class Main {
         p1.PrintName();
 
         Teacher t1 = new Teacher();
-        t1.PrintName();
+        t1.PrintName(); 
         t1.PrintAge();
         t1.PrintSalary();
         t1.PrintSubject();
